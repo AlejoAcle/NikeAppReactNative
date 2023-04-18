@@ -28,3 +28,4 @@ const styles = StyleSheet.create({
 });
 
 
+// https://www.youtube.com/watch?v=Gvxv6JCabA8&t=1796s
