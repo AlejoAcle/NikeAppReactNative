@@ -17,7 +17,7 @@ const ProductDetailsScreen = () => {
 
   const addToCart = () =>{
     console.warn("Product Added")
-    }
+    };
   
 
   return (
