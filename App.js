@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View} from "react-native";
 import Navigation from "./src/navigation";
 import { Provider } from 'react-redux';
-import { sotre } from './src/store';
+import { store } from './src/store';
 
 // import ProductScreen from "./src/screens/ProductScreen";
 // import ProductDetailsScreen from "./src/Screens/ProductDetailsScreen";
@@ -11,7 +11,7 @@ import { sotre } from './src/store';
 
 export default function App() {
   return (
-    <Provider store={}>
+    <Provider store={store}>
     <View style={styles.container}>
       <Navigation />
       {/* <ProductScreen /> */}

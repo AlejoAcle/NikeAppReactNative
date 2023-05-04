@@ -9,17 +9,18 @@ import {
   Pressable,
 } from "react-native";
 import products from "../Data/products";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
+import { cartSlice } from "../store/cartSlice";
 
 const ProductDetailsScreen = () => {
   // const product = products[0];
   const product = useSelector(state => state.products.selectedProduct)
+  const dispatch = useDispatch();
 
   const { width } = useWindowDimensions();
 
   const addToCart = () =>{
-    console.warn("Product Added")
+    dispatch(cartSlice.actions.addToCartItem({product}))
     };
   
 
