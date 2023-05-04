@@ -1,6 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View} from "react-native";
 import Navigation from "./src/navigation";
+import { Provider } from 'react-redux';
+import { sotre } from './src/store';
 
 // import ProductScreen from "./src/screens/ProductScreen";
 // import ProductDetailsScreen from "./src/Screens/ProductDetailsScreen";
@@ -9,6 +11,7 @@ import Navigation from "./src/navigation";
 
 export default function App() {
   return (
+    <Provider store={}>
     <View style={styles.container}>
       <Navigation />
       {/* <ProductScreen /> */}
@@ -17,8 +20,10 @@ export default function App() {
 
       <StatusBar style="auto" />
     </View>
+    </Provider>
   );
 }
+
 
 
 
@@ -32,4 +37,4 @@ const styles = StyleSheet.create({
 });
 
 
-// https://www.youtube.com/watch?v=Gvxv6JCabA8&t=1796s
+// https://youtu.be/Gvxv6JCabA8?t=9248
